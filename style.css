@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('./todo_list_bg_image.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: violet; */
+}
+
+.container{
+    width: 60vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-time{
+    display: flex;
+    gap: 30px;
+}
+
+#time{
+    color: red;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#date{
+    color: red;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heading{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.add-task{
+    display: flex;
+}
+
+#task-addition{
+    width: 400px;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#addbtn{
+    width: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tasks{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 400px;
+    margin: 10px;
+    padding: 5px;
+    background-color: beige;
+}
+
+@media screen and (min-width:300px) {
+    #time{
+        font-size: 10px;
+    }
+    #date{
+        font-size: 10px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    #task-addition{
+        width: 200px;
+    }
+    .tasks{
+        width: 200px;
+    }
+}
+
+@media screen and (min-width:500px) {
+    #time{
+        font-size: 20px;
+    }
+    #date{
+        font-size: 20px;
+    }
+    .heading{
+        font-size: 25px;
+    }
+    #task-addition{
+        width: 400px;
+    }
+    .tasks{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    #time{
+        font-size: 30px;
+    }
+    #date{
+        font-size: 30px;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    #task-addition{
+        width: 400px;
+    }
+    .tasks{
+        width: 400px;
+    }
+}
