@@ -17,27 +17,13 @@
         <div class="heading">
             My ToDo List
         </div>
-        <div class="add-task">
-            <input type="text" id="task-addition" placeholder="Enter your task">
-            <button id="addbtn">add</button>
-        </div>
-        <div class="task">
-            <div class="task-1 tasks">DSA</div>
-            <div class="task-2 tasks">DBMS</div>
-            <div class="task-3 tasks">Exercise</div>
-            <div class="task-4 tasks">Meditation</div>
-            <div class="task-5 tasks">Walking</div>
-            <div class="task-6 tasks">Movie in the night</div>
-        </div>
+        <form class="add-task">
+            <input type="text" id="task-addition" autocomplete="off" placeholder="Enter your task">
+            <button type="submit" id="addBtn">add</button>
+        </form>
+        <div class="error">Nothing is in TODO List</div>
+        <ol class="output"></ol>
     </div>
 </body>
-<script>
-    function getTime(){
-        let time = new Date().toLocaleTimeString();
-        let date = new Date().toDateString();
-        document.getElementById("time").innerHTML=time;
-        document.getElementById("date").innerHTML=date;
-    }
-    setInterval(getTime, 100);
-</script>
+<script src="index.js"></script>
 </html>
